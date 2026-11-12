@@ -1,0 +1,17 @@
+{
+  "name": "creator-tenant-subdomains",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/tenant_provision.ts",
+    "test": "node --experimental-strip-types src/tenant_provision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
